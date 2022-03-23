@@ -28,4 +28,5 @@ jobs:
       - name: Terraform Init
         run: |
           cd ./Terraform/Pipeline_CI_CD_Terraform
+          terraform init
 
