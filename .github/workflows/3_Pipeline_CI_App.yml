@@ -54,7 +54,7 @@ jobs:
         run: |
           cd API && npm test
 
-  build-push:
+  build-scan-push:
     runs-on: ubuntu-latest 
     needs: test-unitaire
 
@@ -62,9 +62,29 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
+      - name: Build de l'image de l'application
+        run: |
+          cd API && docker build . -t acrpierrc007.azurecr.io/coolapi:0.0.1
+
+      - name: Scan Image
+        uses: Azure/container-scan@v0 
+        id: container-scan
+        continue-on-error: true
+        with:
+          image-name: acrpierrc007.azurecr.io/coolapi:0.0.1         
+
       - name: Login Azure Container Registry
         run: |
           docker login acrpierrc007.azurecr.io --username ${{ secrets.CLIENTID}} --password ${{ secrets.CLIENTSECRET }}
+
+      - name: Push de l'image de l'application
+        run: |
+          cd API && docker push acrpierrc007.azurecr.io/coolapi:0.0.1
+
+
+        
+
+
           
 
 
