@@ -30,7 +30,13 @@ jobs:
       - name: Terraform Validate
         run: |
           cd ./Terraform/4_Pipeline_CI_CD_Terraform
-          terraform validate    
+          terraform validate
+
+    # Generates an execution plan for Terraform
+    - name: Terraform Plan
+      run: |
+        cd ./Terraform/4_Pipeline_CI_CD_Terraform
+        terraform plan -var 'AzureSubscriptionID=${{ secrets.SUBSCRIPTIONID }}' -var 'AzureClientSecret=${{ secrets.CLIENTSECRET }}' -var 'AzureClientID=${{ secrets.CLIENTID }}' -var 'AzureTenandID=${{ secrets.TENANTID }}' -lock=false    
 
     
 
