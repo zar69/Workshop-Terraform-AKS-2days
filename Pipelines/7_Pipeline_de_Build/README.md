@@ -18,9 +18,4 @@ Information complémentaire : Identify vulnerable container images in your CI/CD
 L'authentification à l'Azure Container Registry se fait avec un Service Principal et la cli Docker
 cf. https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal#use-with-docker-login :
 
-
 Le fichier du workflow de ce lab est .github/workflows/3_Pipeline_CI_App.yml
-
-
-
-
