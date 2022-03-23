@@ -9,9 +9,23 @@ jobs:
   Build-Terraform:
     runs-on: ubuntu-latest
 
-
     steps:
 
       - name: Checks-out du repository
         uses: actions/checkout@v2
+
+      - name: connexion Azure
+        uses: Azure/login@v1 # Action pour se connecter à Azure https://github.com/Azure/login
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }} # Service Secrets de GitHub https://docs.github.com/en/actions/security-guides/encrypted-secrets
+
+      # Install the needed version of Terraform cli
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.1.7
+
+      - name: Terraform Init
+        run: |
+          cd ./Terraform/Pipeline-GH    
 
