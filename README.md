@@ -27,7 +27,7 @@ tags: #workshop #aks #github #terraform
 - Lab 6 : Déploiement Azure Kubernetes Service
 
 ### Après midi
-- Rappels sur les deploiements kubernetes : (YAML, Helm) et pilelines
+- Rappels sur les deploiements Kubernetes : (YAML, Helm) et pipelines
 - Focus/explication sur les Pipelines de Build 
 - Lab 7 : Pipeline de build d'une application conteneurisée
 - Focus/explication Pipeline de release
@@ -61,3 +61,5 @@ Récupérer l'ID de la subscription Azure puis exécuter la commande suivante :
 az ad sp create-for-rbac --name "votrenom-demo-githubaction2022" --role "Contributor" --scopes /subscriptions/METTRE_ICI_L_ID_DE_LA_SUBSCRIPTION --sdk-auth -o jsonc
 
 Récupérer le output de la commande et le sauvegarder temporairement dans un fichier 
+   
+
