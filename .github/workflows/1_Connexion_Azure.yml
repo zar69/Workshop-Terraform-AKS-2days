@@ -12,4 +12,11 @@ jobs:
     
     steps:
       
-      - uses: actions/checkout@v2
+      - name: connexion Azure
+        uses: Azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Liste des ressources groupes dans un abonnement
+        run: |
+          az group list -o table
