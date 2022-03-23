@@ -1,6 +1,6 @@
-# Lab 1 : Resource Group et Storage Account
+# Lab 1 : Resource Group et machine virtuelle Linux
 
-Aller dans le répertoire Terraform/1_Compte_de_Stockage
+Aller dans le répertoire Terraform/2_VM
 
 Editer les 4 fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
@@ -18,13 +18,13 @@ Exécuter **terraform plan**
 
 Si tout se passe bien, cela doit afficher
 
-_Plan: 3 to add, 0 to change, 0 to destroy._ 
+_Plan: 5 to add, 0 to change, 0 to destroy._ 
 
 Exécuter **terraform apply** 
 
 le message suivant va être affiché :
 
-*Plan: 3 to add, 0 to change, 0 to destroy.
+*Plan: 5 to add, 0 to change, 0 to destroy.
  Do you want to perform these actions?
   Terraform will perform the actions described above.
   Only 'yes' will be accepted to approve.
@@ -35,7 +35,7 @@ le message suivant va être affiché :
 
   Une fois le déploiement terminé. 
 
-  Exécuter **ls -lisa** et vérifier la présence de 2 nouveaux fichiers : **terraform.tfstate** et **terraform.tfstate.backup**
+  Exécuter **ls -lisa** et vérifier la présence du TFstate dans le container tfstate du compte de stockage créé dans le lab 1
 
   Exécuter **terraform show** pour voir le TFState
   
