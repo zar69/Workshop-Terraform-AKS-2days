@@ -12,6 +12,6 @@ jobs:
 
     steps:
 
-      - name: Checks-out your repository under $GITHUB_WORKSPACE
+      - name: Checks-out du repository
         uses: actions/checkout@v2
 
