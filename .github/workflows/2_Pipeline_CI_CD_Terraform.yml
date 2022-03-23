@@ -32,12 +32,16 @@ jobs:
           cd ./Terraform/4_Pipeline_CI_CD_Terraform
           terraform validate
 
-    # Generates an execution plan for Terraform
+      # Generates an execution plan for Terraform with tfplan file https://www.terraform.io/cli/commands/plan
       - name: Terraform Plan
         run: |
           cd ./Terraform/4_Pipeline_CI_CD_Terraform
           terraform plan -var 'AzureSubscriptionID=${{ secrets.SUBSCRIPTIONID }}' -var 'AzureClientSecret=${{ secrets.CLIENTSECRET }}' -var 'AzureClientID=${{ secrets.CLIENTID }}' -var 'AzureTenandID=${{ secrets.TENANTID }}' -lock=false -out=monplan.tfplan
-          ls -lisa    
-
+              
+      # apply a execution plan https://www.terraform.io/cli/commands/apply      
+      - name: Terraform Plan
+        run: |
+          cd ./Terraform/4_Pipeline_CI_CD_Terraform
+          terraform apply -var 'AzureSubscriptionID=${{ secrets.SUBSCRIPTIONID }}' -var 'AzureClientSecret=${{ secrets.CLIENTSECRET }}' -var 'AzureClientID=${{ secrets.CLIENTID }}' -var 'AzureTenandID=${{ secrets.TENANTID }}' -auto-approve -lock=false "monplan.tfplan"
     
 
