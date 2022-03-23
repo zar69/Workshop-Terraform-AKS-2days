@@ -50,4 +50,5 @@ jobs:
           cd API && npm install
       - name: Tests unitaires
         run: |
-          cd API && npm test  
+          cd API && npm test
+         
