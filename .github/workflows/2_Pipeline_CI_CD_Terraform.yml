@@ -1,0 +1,17 @@
+name: 2 - Worflow CI/CD Terraform
+
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  Build-Terraform:
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+      - name: Checks-out your repository under $GITHUB_WORKSPACE
+        uses: actions/checkout@v2
+
