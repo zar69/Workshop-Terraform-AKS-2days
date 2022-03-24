@@ -30,5 +30,5 @@ cat namespace.yml | tfk8s > namespace.tf
 
 terraform init
 terraform plan
-terraforn apply 
+terraform apply 
 
