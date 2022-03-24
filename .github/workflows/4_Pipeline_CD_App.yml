@@ -31,10 +31,10 @@ jobs:
       - name: Deploiement application dans AKS
         run: |
           pwd
-          cd /Kubernetes/Manifests/coolapi
+          cd Kubernetes/Manifests/coolapi
           pwd
-          kubectl apply -f ./Kubernetes/Manifests/coolapi/1_namespace.yml
-          kubectl apply -f ./Kubernetes/Manifests/coolapi/2_deployment.yml
-          kubectl apply -f ./Kubernetes/Manifests/coolapi/3_service.yml
+          kubectl apply -f 1_namespace.yml
+          kubectl apply -f 2_deployment.yml
+          kubectl apply -f 3_service.yml
 
 
