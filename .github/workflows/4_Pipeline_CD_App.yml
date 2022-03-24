@@ -15,24 +15,24 @@ jobs:
   Deploy-App-Aks:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       
-    - name: Login Azure
-      uses: Azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Login Azure
+        uses: Azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
     
-    - name: Get AKS Credentials
-      run: |
-        az aks get-credentials --resource-group ${{ env.RG_NAME }} --name ${{ env.CLUSTER_NAME }}
+      - name: Get AKS Credentials
+        run: |
+          az aks get-credentials --resource-group ${{ env.RG_NAME }} --name ${{ env.CLUSTER_NAME }}
 
-    - name: Deploiement application dans AKS
-      run: |
-        cd ./Kubernetes/Manifests/coolapi
-        kubectl apply -f ./Kubernetes/Manifests/coolapi/1_namespace.yml
-        kubectl apply -f ./Kubernetes/Manifests/coolapi/2_deployment.yml
-        kubectl apply -f ./Kubernetes/Manifests/coolapi/3_service.yml
+      - name: Deploiement application dans AKS
+        run: |
+          cd ./Kubernetes/Manifests/coolapi
+          kubectl apply -f ./Kubernetes/Manifests/coolapi/1_namespace.yml
+          kubectl apply -f ./Kubernetes/Manifests/coolapi/2_deployment.yml
+          kubectl apply -f ./Kubernetes/Manifests/coolapi/3_service.yml
 
 
