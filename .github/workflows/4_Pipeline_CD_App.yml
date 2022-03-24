@@ -1,0 +1,38 @@
+name: 4 - Worflow CD Application dans AKS
+
+on:
+  workflow_dispatch:
+
+env: # variables
+  RG_NAME: "RG-AKSCluster"
+  CLUSTER_NAME: "AKS-000" 
+  REGISTRY_NAME: "acrpierrc007"
+  APP_NAME: "coolapi"
+  IMAGE_VERSION: "1.0.0"
+
+jobs:
+
+  Deploy-App-Aks:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    - name: Login Azure
+      uses: Azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Get AKS Credentials
+      run: |
+        az aks get-credentials --resource-group ${{ env.RG_NAME }} --name ${{ env.CLUSTER_NAME }}
+
+    - name: Deploiement application dans AKS
+      run: |
+        cd ./Kubernetes/Manifests/coolapi
+        kubectl apply -f ./Kubernetes/Manifests/coolapi/1_namespace.yml
+        kubectl apply -f ./Kubernetes/Manifests/coolapi/2_deployment.yml
+        kubectl apply -f ./Kubernetes/Manifests/coolapi/3_service.yml
+
+
