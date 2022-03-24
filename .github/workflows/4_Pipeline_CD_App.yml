@@ -29,10 +29,8 @@ jobs:
           az aks get-credentials --resource-group ${{ env.RG_NAME }} --name ${{ env.CLUSTER_NAME }}
 
       - name: Deploiement application dans AKS
-        run: |
-          pwd
-          cd Kubernetes/Manifests/coolapi
-          pwd
+        run: |      
+          cd Kubernetes/Manifests/coolapi          
           kubectl apply -f 1_namespace.yml
           kubectl apply -f 2_deployment.yml
           kubectl apply -f 3_service.yml
