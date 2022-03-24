@@ -4,6 +4,11 @@ name: 3 - Worflow CI Application
 on:
   workflow_dispatch:
 
+env:
+  REGISTRY_NAME: "acrpierrc007"
+  APP_NAME: "coolapi"
+  IMAGE_VERSION: "1.0.0"
+
 jobs:
 
   analyze-code: # You can use CodeQL to identify vulnerabilities and errors in your code. The results are shown as code scanning alerts in GitHub https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql
@@ -64,14 +69,14 @@ jobs:
 
       - name: Build de l'image de l'application
         run: |
-          cd API && docker build . -t acrpierrc007.azurecr.io/coolapi:0.0.1
+          cd API && docker build . -t ${{ env.REGISTRY_NAME}}.azurecr.io/${{ env.APP_NAME }}:${{ env.IMAGE_VERSION }}
 
       - name: Scan Image
         uses: Azure/container-scan@v0 
         id: container-scan
         continue-on-error: true
         with:
-          image-name: acrpierrc007.azurecr.io/coolapi:0.0.1         
+          image-name: ${{ env.REGISTRY_NAME}}.azurecr.io/${{ env.APP_NAME }}:${{ env.IMAGE_VERSION }}         
 
       - name: Login Azure Container Registry
         run: |
@@ -79,7 +84,7 @@ jobs:
 
       - name: Push de l'image de l'application
         run: |
-          cd API && docker push acrpierrc007.azurecr.io/coolapi:0.0.1
+          cd API && docker push ${{ env.REGISTRY_NAME}}.azurecr.io/${{ env.APP_NAME }}:${{ env.IMAGE_VERSION }}
 
 
         
