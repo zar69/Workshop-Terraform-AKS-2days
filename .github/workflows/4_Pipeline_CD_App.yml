@@ -13,7 +13,7 @@ env: # variables
 jobs:
 
   Deploy-App-Aks:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
   steps:
     - name: Checkout
