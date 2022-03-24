@@ -29,9 +29,11 @@ tags: #workshop #aks #github #terraform
 ### Après midi
 - Rappels sur les deploiements Kubernetes : (YAML, Helm) et pipelines
 - Focus/explication sur les Pipelines de Build 
-- Lab 7 : Pipeline de build d'une application conteneurisée
+- Lab 7 : Pipeline de build (CI) d'une application conteneurisée
 - Focus/explication Pipeline de release
 - Lab 8 : Pipeline de release d'une application dans Kubernetes
+- Lab 9 : Pipeline de release d'une application dans Kubernetes Advanced (analyse manifest YML...)
+- Lab 10 : Déploiement dans Kubernetes avec Terraform
 
 ---
 ## Pré requis
