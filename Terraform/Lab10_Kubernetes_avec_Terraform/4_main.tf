@@ -20,7 +20,4 @@ resource "kubernetes_namespace" "Terra-k8s-ns" {
 
 # Création d'un namespace en utilisant un manifest Kubernetes en YAML 
 # cf. https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/manifest
-
-resource "kubernetes_manifest" "Terra-manifest-1"" {
-
-}
+# voir la procédure dans le readme du Lab 10
