@@ -35,8 +35,8 @@ jobs:
           docker run -v $(pwd):/project zegl/kube-score:latest score ./Kubernetes/Manifests/coolapi/*.yml \
             --ignore-test pod-networkpolicy \
             --ignore-test container-image-pull-policy \
-            --ignore-test container-resources \
-            --ignore-test pod-probes \
+#            --ignore-test container-resources \
+#            --ignore-test pod-probes \
             --ignore-test container-security-context-user-group-id \
             --ignore-test container-security-context-readonlyrootfilesystem \
             --ignore-test container-ephemeral-storage-request-equals-limit \
