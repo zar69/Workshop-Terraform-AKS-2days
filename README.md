@@ -49,7 +49,7 @@ Avoir les outils suivants :
 - terraform -> https://learn.hashicorp.com/tutorials/terraform/install-cli (test : ~$ terraform)
 - kubectl -> https://kubernetes.io/docs/tasks/tools/#kubectl
 - Visual Studio Code -> https://code.visualstudio.com
-- Extension Terraform pour VSCode -> Depuis le bash, executez « code . » et aller chercher l’extension « Hashicorp Terraform »
+- Extension Terraform pour VSCode -> Depuis le bash, exécuter « code . » et aller chercher l’extension « Hashicorp Terraform »
 
 
 **Créer un Service Principal dans Azure**
