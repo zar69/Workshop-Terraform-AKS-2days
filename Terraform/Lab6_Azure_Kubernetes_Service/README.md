@@ -12,7 +12,7 @@ Optionnel : éditer le fichier *.tfvars pour définir les valeurs de vos variabl
 
 Astuce : Utiliser les liens présents dans les fichiers pour aller dans la documentation de Terraform
 
-Une fois les fichiers modifiés, placez vous dans votre bash dans le répertoire Terraform/AzureContainerRegistry et exécuter la commande **terraform init** 
+Une fois les fichiers modifiés, placez vous dans votre bash dans le répertoire Terraform/Lab6_Azure_Kubernetes_Service et exécuter la commande **terraform init** 
 
 Cette commande va télécharger le provider azurerm (dans cet exercice) mais aussi initaliser le backend pour le TFSTATE
 
