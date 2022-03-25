@@ -19,7 +19,7 @@ Mettre les informations récupérées lors de la création du "Service Principal
 
 Procédure pour créer un secret GitHub : https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md
 
-Déclencher manuellement le workflow GiHub
+Déclencher manuellement le workflow GiHub (Pipeline est ici : .github/workflows/Lab3_Simple_Pipeline.yml)
 
 Procédure associée : https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow
 
