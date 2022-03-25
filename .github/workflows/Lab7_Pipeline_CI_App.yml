@@ -1,6 +1,5 @@
 name: 3 - Workflow CI Application
 
-
 on:
   workflow_dispatch:
 
