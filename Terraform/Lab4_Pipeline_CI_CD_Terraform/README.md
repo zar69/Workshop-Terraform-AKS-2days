@@ -4,6 +4,8 @@ Objectif : Déploiement d'un resource group Azure depuis un GitHub Workflow trai
 
 Pré requis : avoir un Service Principal Azure 
 
+## Préparer les secrets  GitHub
+
 Générer un token SAS sur le **container tfstate** du compte de stockage créé dans le Lab 1. Donner les permissions suivantes au token : read, add, create, write, List
 
 Procédure : https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers#create-your-tokens
@@ -20,9 +22,21 @@ De la même manière, créer 4 autres secrets GitHub représentant les 4 chaines
 - **SUBSCRIPTIONID**
 - **TENANTID**
 
-Déclencher manuellement le workflow GiHub (le Pipeline est dans le répertoire : **.github/workflows/Lab4_Pipeline_CI_CD_Terraform.yml**)
+## Déclencher manuellement le workflow GiHub 
+
+Le Pipeline est dans le répertoire : **.github/workflows/Lab4_Pipeline_CI_CD_Terraform.yml**
+
+Aller dans GitHub dans votre
+Cliquer sur Actions (entre Pull Request et Projets)
+Sélectionner le workflow **2 - CI/CD Terraform**
+Cliquer sur le menu déroulant Run Workflow
+Cliquer sur le bouton Run workflow
 
 Procédure associée : https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow
+
+Le Workflow va prendre quelques secondes à démarrer avec un indicateur orange
+
+Cliquer sur le nom du workflow à côté du point orange pour voir le déroulé du workflow
 
 Si le pipeline s'exécute correctement, une coche verte doit apparaitre.
 
