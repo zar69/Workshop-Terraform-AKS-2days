@@ -31,6 +31,9 @@ cat namespace.yml | tfk8s > namespace.tf
 
 
 ## Déployer le tout
+
+Lire les fichiers main.tf et namespace.tf et déterminer les différences 
+
 terraform init
 
 terraform plan
