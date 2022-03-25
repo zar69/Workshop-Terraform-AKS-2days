@@ -1,16 +1,19 @@
-# Lab 4 : Pipeline GitHub Action avec Terraform
+# Lab 3 : Simple pipeline
 
-Objectif : Déploiement d'un resource group Azure depuis un GitHub Workflow traitant du code Terraform
+Objectif : Connexion à un abonnement Azure et liste les ressources groupes de l'abonnement
 
-Pré requis : avoir un Service Principal Azure 
+Pré requis : avoir un Service Principal Azure
 
-Générer un token SAS sur le **container tfstate** du compte de stockage créé dans le Lab 1. Donner les permissions suivantes au token : read, add, create, write, List
+Créer un secret "AZURE_CREDENTIALS" dans le service secret de GitHub.
+Mettre les informations récupérées lors de la création du "Service Principal"
+  
+  {
+    "clientId": "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx",
+    "clientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "subscriptionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+    "tenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  } 
 
-Procédure : https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers#create-your-tokens
-
-Le token SAS doit ressembler à ce genre de chaine :  __sp=racwl&st=2022-03-11T14:00:27Z&se=2022-03-11T22:22:27Z&spr=https&sv=2020-08-04&sr=c&sig=vHXCwdRCoLpiRsLPURDd%2F2t3g8vQRiKCBM8qFrGsML0%3D__
-
-Copier le token SAS dans un secret GITHUB appelé **TOKENSASBACKEND**
 
 Procédure pour créer un secret GitHub : https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md
 
@@ -18,6 +21,6 @@ Déclencher manuellement le workflow GiHub
 
 Procédure associée : https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow
 
-Si le pipeline s'exécute correctement, une coche verte doit apparaitre.
+Si le pipeline s'exécute correctement, une coche verte doit apparaitre. Dans les logs du workflow, on doit voir les ressources groupes de l'abonnement
 
-Si c'est le cas, vérifier la création du resource group via le workflow Github avec la commande suivante : **az group list | grep Demo**  
+  

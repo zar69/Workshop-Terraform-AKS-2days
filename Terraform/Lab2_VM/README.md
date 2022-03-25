@@ -1,6 +1,6 @@
 # Lab 2 : Resource Group et machine virtuelle Linux
 
-Aller dans le répertoire Terraform/2_VM
+Aller dans le répertoire Terraform/Lab2_VM
 
 Editer les 4 fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
