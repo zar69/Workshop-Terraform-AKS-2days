@@ -1,10 +1,10 @@
-# Lab 3 : Azure Kubernetes Service avec TFState dans un Backend Azure Storage Account
+# Lab 6 : Azure Kubernetes Service avec TFState dans un Backend Azure Storage Account
 
 Objectifs : 
 - Déployer un cluster Azure Kubernetes Service dans le ressource group créé dans le Lab 1
 - Donner la permission au cluster AKS de télécharger des images de conteneurs depuis l'Azure Container Registry créée dans le Lab 2
 
-Aller dans le répertoire Terraform/Lab6_AKS
+Aller dans le répertoire Terraform/Lab6_Azure_Kubernetes_Service
 
 Editer les fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
@@ -18,5 +18,4 @@ Cette commande va télécharger le provider azurerm (dans cet exercice) mais aus
 
 Exécuter **terraform plan**
 
-Exécuter **terraform apply** 
-
+Exécuter **terraform apply**
