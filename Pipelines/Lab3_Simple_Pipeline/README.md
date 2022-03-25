@@ -6,13 +6,15 @@ Pré requis : avoir un Service Principal Azure
 
 Créer un secret "AZURE_CREDENTIALS" dans le service secret de GitHub.
 Mettre les informations récupérées lors de la création du "Service Principal"
-  
+  ```
   {
     "clientId": "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx",
     "clientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "subscriptionId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
     "tenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-  } 
+  }
+  ```
+   
 
 
 Procédure pour créer un secret GitHub : https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md
