@@ -1,8 +1,7 @@
-name: 1 - Worflow connexion Azure # Nom du Workflow
+name: 1 - Workflow connexion Azure # Nom du Workflow
 
 on:
   workflow_dispatch: # manuel https://docs.github.com/en/actions/using-workflows/triggering-a-workflow
-
 
 jobs:
   
