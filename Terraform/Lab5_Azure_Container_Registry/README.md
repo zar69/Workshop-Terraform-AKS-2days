@@ -1,12 +1,14 @@
 # Lab 5 : Azure Container Registry avec TFState dans un Backend Azure Storage Account
 
-Aller dans le répertoire Terraform/Lab5_Azure_Container_Registry
+Objectif : Déploiement d'une Azure Container Registry avec stockage du TFState dans le compte de stockage créé dans le Lab 1
+
+Aller dans le répertoire **Terraform/Lab5_Azure_Container_Registry**
 
 Editer les 3 fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
 Utiliser les liens présents dans les fichiers pour aller dans la documentation de Terraform
 
-Important : dans le fichier 3-variables.tf  mettre un nom unique pour votre Azure Container Registry
+**/!\ Important** : dans le fichier 3-variables.tf  mettre un nom unique pour votre Azure Container Registry
 
 Une fois les fichiers modifiés, placez vous dans votre bash dans le répertoire Terraform/AzureContainerRegistry et exécuter la commande **terraform init** 
 
