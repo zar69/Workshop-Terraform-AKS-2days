@@ -14,7 +14,7 @@ Copier le token SAS dans un secret GITHUB appelé **TOKENSASBACKEND**
 
 Procédure pour créer un secret GitHub : https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md
 
-Déclencher manuellement le workflow GiHub
+Déclencher manuellement le workflow GiHub (Pipeline est ici : .github/workflows/Lab4_Pipeline_CI_CD_Terraform.yml)
 
 Procédure associée : https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow
 
