@@ -1,6 +1,8 @@
 # Lab 1 : Resource Group et Storage Account
 
-Aller dans le répertoire Terraform/Lab1_Compte_de_Stockage
+Objectif : Déployer un Resource Group et un compte de stockage Azure avec terraform
+
+Aller dans le **répertoire Terraform/Lab1_Compte_de_Stockage**
 
 Editer les 4 fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
@@ -38,4 +40,3 @@ le message suivant va être affiché :
   Exécuter **ls -lisa** et vérifier la présence de 2 nouveaux fichiers : **terraform.tfstate** et **terraform.tfstate.backup**
 
   Exécuter **terraform show** pour voir le TFState
-  
