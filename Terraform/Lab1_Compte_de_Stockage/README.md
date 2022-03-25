@@ -1,6 +1,6 @@
 # Lab 1 : Resource Group et Storage Account
 
-Aller dans le répertoire Terraform/1_Compte_de_Stockage
+Aller dans le répertoire Terraform/Lab1_Compte_de_Stockage
 
 Editer les 4 fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
