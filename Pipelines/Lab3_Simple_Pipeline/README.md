@@ -4,9 +4,8 @@ Objectif : Connexion à un abonnement Azure et liste les ressources groupes de l
 
 Pré requis : avoir un Service Principal Azure
 
-## Créér un secret "AZURE_CREDENTIALS"
+## Créér un secret "AZURE_CREDENTIALS" dans le service secret de GitHub
 
-Créer un secret "AZURE_CREDENTIALS" dans le service secret de GitHub.
 Mettre les informations récupérées lors de la création du "Service Principal"
   ```
   {
