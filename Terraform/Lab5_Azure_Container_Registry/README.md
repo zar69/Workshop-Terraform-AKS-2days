@@ -1,6 +1,6 @@
-# Lab 2 : Azure Container Registry avec TFState dans un Backend Azure Storage Account
+# Lab 5 : Azure Container Registry avec TFState dans un Backend Azure Storage Account
 
-Aller dans le répertoire Terraform/AzureContainerRegistry
+Aller dans le répertoire Terraform/Lab5_Azure_Container_Registry
 
 Editer les 3 fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
