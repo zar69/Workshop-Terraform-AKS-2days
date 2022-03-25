@@ -32,7 +32,9 @@ cat namespace.yml | tfk8s > namespace.tf
 
 ## Déployer le tout
 terraform init
+
 terraform plan
+
 terraform apply
 
 ## Vérifier la création des 2 namespaces
