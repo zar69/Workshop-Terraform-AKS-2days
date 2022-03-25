@@ -11,7 +11,8 @@ Visualiser les trois fichiers:
 Lancer le forkflow "4 - Workflow CD Application dans AKS"
 
 Vérification:
-- Aller dans la console Azure
+- Aller dans la console Azure (https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters)
 - Dans le cluster AKS
-- 
+- Kubernetes resources Namespaces (vérifier la présence du Namespace)
+- Kubernetes resources Services and Ingress (coolapi-service et cliquer sur l'adresse IP Publique externe)
 
