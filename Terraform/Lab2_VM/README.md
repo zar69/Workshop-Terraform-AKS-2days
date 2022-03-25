@@ -1,4 +1,4 @@
-# Lab 1 : Resource Group et machine virtuelle Linux
+# Lab 2 : Resource Group et machine virtuelle Linux
 
 Aller dans le répertoire Terraform/2_VM
 
