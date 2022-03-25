@@ -1,5 +1,7 @@
 # Lab 2 : Resource Group et machine virtuelle Linux
 
+Objectif : Déployer un Resource Group et une machine virtuelle Linux avec le stockage du TFSTATE dans le compte de stockage créé dans le Lab1
+
 Aller dans le répertoire Terraform/Lab2_VM
 
 Editer les 4 fichiers terraform (.tf) les uns après les autres en suivant la numérotation
@@ -35,7 +37,9 @@ le message suivant va être affiché :
 
   Une fois le déploiement terminé. 
 
-  Exécuter **ls -lisa** et vérifier la présence du TFstate dans le container tfstate du compte de stockage créé dans le lab 1
+  Exécuter **ls -lisa**, il ne doit pas y avoir de fichier terraform.tfstate
+  
+  Vérifier la présence du TFstate dans le container tfstate du compte de stockage créé dans le lab 1
 
   Exécuter **terraform show** pour voir le TFState
   
