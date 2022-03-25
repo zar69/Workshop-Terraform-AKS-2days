@@ -4,7 +4,7 @@ Objectifs :
 - Déployer un cluster Azure Kubernetes Service dans le ressource group créé dans le Lab 1
 - Donner la permission au cluster AKS de télécharger des images de conteneurs depuis l'Azure Container Registry créée dans le Lab 2
 
-Aller dans le répertoire Terraform/ClusterAKS
+Aller dans le répertoire Terraform/Lab6_AKS
 
 Editer les fichiers terraform (.tf) les uns après les autres en suivant la numérotation
 
