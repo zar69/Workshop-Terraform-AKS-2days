@@ -1,4 +1,4 @@
-name: 5 - Worflow CD Application dans AKS - Advanced
+name: 5 - Workflow CD Application dans AKS - Advanced
 
 on:
   workflow_dispatch:
@@ -18,15 +18,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      
-      - name: Login Azure
-        uses: Azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
-      - name: Get AKS Credentials
-        run: |
-          az aks get-credentials --resource-group ${{ env.RG_NAME }} --name ${{ env.CLUSTER_NAME }}
 
       # recommandations "static code analytic" + bonnes pratiques
       # https://github.com/zegl/kube-score/blob/master/README_CHECKS.md
@@ -42,3 +33,10 @@ jobs:
 
 #            --ignore-test container-resources \
 #            --ignore-test pod-probes \
+
+      - name: On continue ?
+        run: |
+          echo test
+
+
+
