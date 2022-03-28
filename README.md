@@ -6,15 +6,15 @@ tags: #workshop #aks #github #terraform
 
 ### Matin
 - Introduction à Terraform
-- Lab 1 : création d'un compte de stockage + containers
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab1_Compte_de_Stockage'>Lab 1 : création d'un compte de stockage + containers</a>
 - Suite de la présentation Terraform (output, datasources)
-- Lab 2 :  création d'une VM   + utilisation du Storage Backend + utilisation 
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab2_VM'>Lab 2 :  création d'une VM   + utilisation du Storage Backend + utilisation </a>
 - Suite de la présentation Terraform : automatisation principe généraux CI/CD, Terraform Cloud
 
 ### Après midi
 - Introduction à GitHub (Repo + Workflow)
-- Lab 3 : simple pipeline
-- Lab 4 : pipeline CI-CD terraform
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Pipelines/Lab3_Simple_Pipeline'>Lab 3 : simple pipeline </a>
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab4_Pipeline_CI_CD_Terraform'>Lab 4 : pipeline CI-CD terraform </a>
 
 ---
 
@@ -23,17 +23,17 @@ tags: #workshop #aks #github #terraform
 - Introduction aux micro services
 - Rappels sur Kubernetes
 - Introduction à Azure Kubernetes Services
-- Lab 5 : Déploiement Azure Container Registry
-- Lab 6 : Déploiement Azure Kubernetes Service
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab5_Azure_Container_Registry'>Lab 5 : Déploiement Azure Container Registry </a>
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab6_Azure_Kubernetes_Service'>Lab 6 : Déploiement Azure Kubernetes Service </a>
 
 ### Après midi
 - Rappels sur les deploiements Kubernetes : (YAML, Helm) et pipelines
 - Focus/explication sur les Pipelines de Build 
-- Lab 7 : Pipeline de build (CI) d'une application conteneurisée
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Pipelines/Lab7_Pipeline_de_Build'>Lab 7 : Pipeline de build (CI) d'une application conteneurisée </a>
 - Focus/explication Pipeline de release
-- Lab 8 : Pipeline de release d'une application dans Kubernetes
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Pipelines/Lab8_Pipeline_de_Release'>Lab 8 : Pipeline de release d'une application dans Kubernetes </a>
 - Lab 9 : Pipeline de release d'une application dans Kubernetes Advanced (analyse manifest YML...)
-- Lab 10 : Déploiement dans Kubernetes avec Terraform
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab10_Kubernetes_avec_Terraform'>Lab 10 : Déploiement dans Kubernetes avec Terraform </a>
 
 ---
 ## Pré requis
