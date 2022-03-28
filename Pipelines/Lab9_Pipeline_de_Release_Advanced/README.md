@@ -5,6 +5,8 @@ Utiliser un pipeline de Release pour déployer l'application dans Azure Kubernet
 
 Ce pipeline utilise **Kubescore** (https://kube-score.com/) pour évaluer le respect des bonnes pratiques Kubernetes
 
+Ce pipeline génère une issue Github en cas d'erreur dans le pipeline
+
 ## Déroulé
 Aller dans le répertoire .github/workflows et visualiser le fichier Lab9_Pipeline_CD_App_Advanced.yml
 
@@ -15,3 +17,5 @@ Déclencher le workflow "Lab9_Pipeline_CD_App_Advanced.yml"
 Visualiser les outputs du pipeline et regarder les erreurs trouvées par kubescore
 
 <img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab9-kubescore-error.jpg'/> 
+
+Vérifier les issues GitHub générées
