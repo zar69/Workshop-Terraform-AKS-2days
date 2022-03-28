@@ -24,9 +24,13 @@ tfk8s permet de transformer un fichier YAML Kubernetes en fichier TF avec des re
 cf : https://github.com/jrhouston/tfk8s
 
 go install github.com/jrhouston/tfk8s@latest
+
 sudo mkdir /opt/tfk8s
+
 sudo mv go/bin/tfk8s /opt/tfk8s
+
 tfk8s --help
+
 cat namespace.yml | tfk8s > namespace.tf
 
 
