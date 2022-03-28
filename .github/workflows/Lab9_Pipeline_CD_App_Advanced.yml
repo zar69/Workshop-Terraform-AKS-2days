@@ -1,4 +1,4 @@
-name: 5 - Worflow CD Application dans AKS - Advanced
+name: 5 - Workflow CD Application dans AKS - Advanced
 
 on:
   workflow_dispatch:
@@ -42,3 +42,10 @@ jobs:
 
 #            --ignore-test container-resources \
 #            --ignore-test pod-probes \
+
+      - name: On continue ?
+        run: |
+          echo test
+
+
+
