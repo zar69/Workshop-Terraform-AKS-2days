@@ -93,7 +93,9 @@ Mettre la clé SSH dans les paramètres du compte github
 
 ## Cloner votre fork sur votre poste local
 
-git clone __urldevotrefork__
+<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-gitclone1.jpg'/> 
+
+<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-gitclone2.jpg'/>
 
 
 
