@@ -52,6 +52,10 @@ tags: #workshop #aks #github #terraform
 - Visual Studio Code -> https://code.visualstudio.com
 - Extension Terraform pour VSCode -> Depuis le bash, exécuter « code . » et aller chercher l’extension « Hashicorp Terraform »
 
+## Créer une clé SSH (si vous n'en avez pas déjà)
+
+ssh-keygen -t rsa 
+
 
 ### Créer un Service Principal dans Azure
 
@@ -78,6 +82,14 @@ Cliquer le bouton Fork
 <img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-fork.jpg'/> 
 
 le repo est forké dans votre environnement github
+
+Mettre la clé SSH dans les paramètres du compte github
+
+<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-ssh1.jpg'/> 
+
+<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-ssh2.jpg'/> 
+
+<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-ssh3.jpg'/> 
 
 ## Cloner votre fork sur votre poste local
 
