@@ -2,6 +2,8 @@
 
 tags: #workshop #aks #github #terraform
 
+<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/logoworkshop.jpg'/> 
+
 ## Jour 1 
 
 ### Matin

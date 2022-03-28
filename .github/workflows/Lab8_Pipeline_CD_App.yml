@@ -1,4 +1,4 @@
-name: 4 - Worflow CD Application dans AKS
+name: 4 - Workflow CD Application dans AKS
 
 on:
   workflow_dispatch:
