@@ -41,10 +41,10 @@ tags: #workshop #aks #github #terraform
 ---
 ## Pré requis
 
-Avoir un environnement Bash 
+### Avoir un environnement Bash 
 - Pour ceux sous Windows 10/11 : Installation WSL2 https://docs.microsoft.com/en-us/windows/wsl/install
 
-Avoir les outils suivants : 
+### Avoir les outils suivants : 
 - git
 - Azure CLI -> https://docs.microsoft.com/fr-fr/cli/azure/install-azure-cli-linux?pivots=apt (test: ~$  az Login)
 - terraform -> https://learn.hashicorp.com/tutorials/terraform/install-cli (test : ~$ terraform)
@@ -53,7 +53,7 @@ Avoir les outils suivants :
 - Extension Terraform pour VSCode -> Depuis le bash, exécuter « code . » et aller chercher l’extension « Hashicorp Terraform »
 
 
-**Créer un Service Principal dans Azure**
+### Créer un Service Principal dans Azure
 
 az login
 
@@ -64,5 +64,15 @@ Récupérer l'ID de la subscription Azure puis exécuter la commande suivante :
 az ad sp create-for-rbac --name "votrenom-demo-githubaction2022" --role "Contributor" --scopes /subscriptions/METTRE_ICI_L_ID_DE_LA_SUBSCRIPTION --sdk-auth -o jsonc
 
 Récupérer le output de la commande et le sauvegarder temporairement dans un fichier 
-   
+
+---
+
+## Forker ce repo
+
+
+## Cloner votre fork sur votre poste local
+
+git clone __urldevotrefork__
+
+
 

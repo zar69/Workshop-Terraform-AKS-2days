@@ -8,6 +8,11 @@ Ce pipeline utilise **Kubescore** (https://kube-score.com/) pour évaluer le res
 Ce pipeline génère une issue Github en cas d'erreur dans le pipeline
 
 ## Déroulé
+
+Aller dans le répertoire .github et éditer le fichier ISSUE_TEMPLATE.md
+
+Modifier la ligne 3 (assignees) avec votre compte github
+
 Aller dans le répertoire .github/workflows et visualiser le fichier Lab9_Pipeline_CD_App_Advanced.yml
 
 A partir de la ligne 33, une step permet d'exécuter des tests statiques sur les manifests YAML Kubernetes en utilisant Kubescore
