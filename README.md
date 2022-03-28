@@ -69,6 +69,15 @@ Récupérer le output de la commande et le sauvegarder temporairement dans un fi
 
 ## Forker ce repo
 
+Ouvrir un navigateur Web et se connecter sur github.com avec un identifiant
+
+Ouvrir un nouvel onglet web et aller sur ce repo : https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days
+
+Cliquer le bouton Fork
+
+<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-fork.jpg'/> 
+
+le repo est forké dans votre environnement github
 
 ## Cloner votre fork sur votre poste local
 
