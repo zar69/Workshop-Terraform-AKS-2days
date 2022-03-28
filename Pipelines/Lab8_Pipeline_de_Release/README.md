@@ -14,5 +14,9 @@ Vérification:
 - Aller dans la console Azure (https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters)
 - Dans le cluster AKS
 - Kubernetes resources Namespaces (vérifier la présence du Namespace)
-- Kubernetes resources Services and Ingress (coolapi-service et cliquer sur l'adresse IP Publique externe)
+- Kubernetes resources Services and Ingresses (coolapi-service et cliquer sur l'adresse IP Publique externe)
+
+Une page web avec le message hello API Bleue doit apparaitre
+
+
 
