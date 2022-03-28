@@ -34,6 +34,13 @@ jobs:
 #            --ignore-test container-resources \
 #            --ignore-test pod-probes \
 
+      - name: Create issue
+        if: ${{ failure() }}
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
       - name: On continue ?
         run: |
           echo test
