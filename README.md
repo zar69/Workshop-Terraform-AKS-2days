@@ -85,7 +85,7 @@ le repo est forké dans votre environnement github
 
 Mettre la clé SSH dans les paramètres du compte github
 
-<img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-ssh1.jpg'/> 
+<img width='300' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-ssh1.jpg'/> 
 
 <img width='800' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-ssh2.jpg'/> 
 
