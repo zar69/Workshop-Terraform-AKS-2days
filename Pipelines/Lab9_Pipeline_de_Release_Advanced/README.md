@@ -1,9 +1,9 @@
-# Lab 9 : Pipeline CD App Advanced
+# Lab 9 : Pipeline Avancé de Release de l'application dans Kubernetes
 
 ## Objectifs
 Utiliser un pipeline de Release pour déployer l'application dans Azure Kubernetes Service en s'appuyant sur des fichiers manifests YAML et l'image coolapi stockée dans l'Azure Container Registry
 
-Ce pipeline utilise Kubescore (https://kube-score.com/) pour évaluer le respect des bonnes pratiques Kubernetes
+Ce pipeline utilise **Kubescore** (https://kube-score.com/) pour évaluer le respect des bonnes pratiques Kubernetes
 
 ## Déroulé
 Aller dans le répertoire .github/workflows et visualiser le fichier Lab9_Pipeline_CD_App_Advanced.yml
