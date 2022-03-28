@@ -35,15 +35,11 @@ jobs:
 #            --ignore-test pod-probes \
 
       - name: Create issue
-        if: ${{ failure() }}
-        uses: JasonEtco/create-an-issue@v2
+        if: ${{ failure() }} # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+        uses: JasonEtco/create-an-issue@v2 # https://github.com/JasonEtco/create-an-issue
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 
-
-      - name: On continue ?
-        run: |
-          echo test
 
 
 
