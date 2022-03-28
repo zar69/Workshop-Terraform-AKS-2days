@@ -34,13 +34,12 @@ tags: #workshop #aks #github #terraform
 - <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Pipelines/Lab7_Pipeline_de_Build'>Lab 7 : Pipeline de build (CI) d'une application conteneurisée </a>
 - Focus/explication Pipeline de release
 - <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Pipelines/Lab8_Pipeline_de_Release'>Lab 8 : Pipeline de release d'une application dans Kubernetes </a>
-- Lab 9 : Pipeline de release d'une application dans Kubernetes Advanced (analyse manifest YML...)
+- <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Pipelines/Lab9_Pipeline_de_Release_Advanced'>Lab 9 : Pipeline de release d'une application dans Kubernetes Advanced (analyse manifest YML...)
 - <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab10_Kubernetes_avec_Terraform'>Lab 10 : Déploiement dans Kubernetes avec Terraform </a>
+
 
 ---
 ## Pré requis
-
-Repo Github pour les étudiants : https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days
 
 Avoir un environnement Bash 
 - Pour ceux sous Windows 10/11 : Installation WSL2 https://docs.microsoft.com/en-us/windows/wsl/install
