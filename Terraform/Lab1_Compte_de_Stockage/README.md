@@ -14,7 +14,9 @@ Pour cela :
 - cloner le repo forké : git clone ....
 
 
-## Objectif : Déployer un Resource Group et un compte de stockage Azure avec terraform
+## Objectif
+
+Déployer un Resource Group et un compte de stockage Azure avec terraform
 
 ## Déroulé
 
