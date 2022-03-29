@@ -12,7 +12,7 @@ Procédure : https://docs.microsoft.com/en-us/azure/cognitive-services/translato
 
 Le token SAS doit ressembler à ce genre de chaine :  __sp=racwl&st=2022-03-11T14:00:27Z&se=2022-03-11T22:22:27Z&spr=https&sv=2020-08-04&sr=c&sig=vHXCwdRCoLpiRsLPURDd%2F2t3g8vQRiKCBM8qFrGsML0%3D__
 
-Copier le token SAS dans un secret GITHUB appelé **TOKENSASBACKEND**
+Copier le token SAS dans un secret GITHUB appelé **BACKENDSTORAGESASTOKEN**
 
 Procédure pour créer un secret GitHub : https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md
 
