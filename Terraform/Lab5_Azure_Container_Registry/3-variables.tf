@@ -15,5 +15,5 @@ variable "resourceGroupName" {
 #  Azure Container Registry name
 variable "acrName" {
   type    = string
-  default = "acrpierrc007"   # IMPORTANT : changer ce nom et mettre un nom unique (cf. https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming#example-names-storage)
+  default = "acrstan2022"   # IMPORTANT : changer ce nom et mettre un nom unique (cf. https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming#example-names-storage)
 }

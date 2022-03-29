@@ -12,7 +12,7 @@ terraform {
   # cf. https://www.terraform.io/language/settings/backends/azurerm
   backend "azurerm" {
     resource_group_name  = "RG-AKSCluster"         # mettre ici le nom du resource group de vos ressource
-    storage_account_name = "backendterrapierrc"      # mettre le nom du compte de stockage créer dans le lab 1
+    storage_account_name = "terraformstan"      # mettre le nom du compte de stockage créer dans le lab 1
     container_name       = "tfstate"
     key                  = "acr.terraform.tfstate" 
   }
@@ -28,7 +28,7 @@ terraform {
       # more info : https://github.com/terraform-providers/terraform-provider-azurerm
       # Check Changelog : https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/CHANGELOG.md
       source  = "hashicorp/azurerm"
-      version = ">= 2.98.0"
+      version = "= 2.98.0"
 
     }
 
