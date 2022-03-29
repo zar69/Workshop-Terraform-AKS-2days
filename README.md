@@ -83,7 +83,7 @@ Cliquer le bouton Fork
 
 le repo est forké dans votre environnement github
 
-Mettre la clé SSH dans les paramètres du compte github
+Mettre la clé SSH (la partie publique dans le fichier id_rsa.pub) dans les paramètres du compte github
 
 <img width='300' src='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/blob/main/images/lab0-ssh1.jpg'/> 
 
