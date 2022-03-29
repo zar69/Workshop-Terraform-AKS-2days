@@ -48,6 +48,15 @@ tags: #workshop #aks #github #terraform
 - git
 - Azure CLI -> https://docs.microsoft.com/fr-fr/cli/azure/install-azure-cli-linux?pivots=apt (test: ~$  az Login)
 - terraform -> https://learn.hashicorp.com/tutorials/terraform/install-cli (test : ~$ terraform)
+
+Procédure d'installation pour Linux (WSL Ubuntu)
+```
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install terraform
+```
+
 - kubectl -> https://kubernetes.io/docs/tasks/tools/#kubectl
 - Visual Studio Code -> https://code.visualstudio.com
 - Extension Terraform pour VSCode -> Depuis le bash, exécuter « code . » et aller chercher l’extension « Hashicorp Terraform »
