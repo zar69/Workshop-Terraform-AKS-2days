@@ -42,6 +42,8 @@ Si tout se passe bien, cela doit afficher
 
 _Plan: 3 to add, 0 to change, 0 to destroy._ 
 
+
+---
 /!\ si vous utilisez terraform dans WSL2, il peut y avoir un problème avec la command terraform plan ou terraform apply qui se bloque. Ceci est lié à un bug de résolution DNS provoqué par une mise à jour de WSL 2.0.
 
 Exécuter la commande suivante pour activer le mode debug de Terraform : 
@@ -50,7 +52,7 @@ export TF_LOG="TRACE"
 ```
 Information supplémentaires sur le debugging terraform : https://www.terraform.io/internals/debugging
 
-Le descriptif du problème et une solution sont disponibles ici : https://www.cryingcloud.com/blog/2022/2/21/terraform-and-wsl2-issue
+Le descriptif du problème et une solution sont disponibles ici : https://www.cryingcloud.com/blog/2022/2/21/terraform-and-wsl2-issue et ici: https://github.com/microsoft/WSL/issues/5420#issuecomment-646479747
 
 Exécuter les commandes suivantes pour régler le problème
 ```
@@ -61,7 +63,7 @@ sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
 sudo chattr +i /etc/resolv.conf
 ```
 
-
+----
 
 Exécuter **terraform apply** 
 
