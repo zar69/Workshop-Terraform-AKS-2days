@@ -1,6 +1,22 @@
 # Lab 1 : Resource Group et Storage Account
 
-Objectif : Déployer un Resource Group et un compte de stockage Azure avec terraform
+## Pré requis
+
+- Avoir installé terraform dans un Bash
+- Etre connecté à Azure (via la commande **az login**)
+- avoir cloné le Repo Github forké
+
+Alternative : utiliser le Cloud Shell Azure.
+Pour cela : 
+- S'authentifier dans le navigateur sur le portail Azure (https://portal.azure.com)
+- Ouvrir un nouvel onglet sur https://shell.azure.com. Valider la création d'un compte de stockage si c'est la première fois que le Cloud Shell est utilisé. Ce compte de stockage sert de stockage persistent (l'Azure Cloud Shell est instancié sous la forme d'un conteneur)
+- Aller dans le répertoire clouddrive :  cd clouddrive
+- cloner le repo forké : git clone ....
+
+
+## Objectif : Déployer un Resource Group et un compte de stockage Azure avec terraform
+
+## Déroulé
 
 Aller dans le **répertoire Terraform/Lab1_Compte_de_Stockage**
 
