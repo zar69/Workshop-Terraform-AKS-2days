@@ -104,7 +104,7 @@ Mettre la clé SSH (la partie publique dans le fichier id_rsa.pub) dans les para
 - Pour ceux sous Windows 10/11 : Installation WSL2 https://docs.microsoft.com/en-us/windows/wsl/install
 
 ### Avoir les outils suivants installés dans WSL : 
-- git
+- git -> https://git-scm.com/book/en/v2/Getting-Started-Installing-Git 
 - Azure CLI -> https://docs.microsoft.com/fr-fr/cli/azure/install-azure-cli-linux?pivots=apt (test: ~$  az Login)
 - terraform -> https://learn.hashicorp.com/tutorials/terraform/install-cli (test : ~$ terraform)
 
