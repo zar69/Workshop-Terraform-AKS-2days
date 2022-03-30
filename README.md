@@ -29,7 +29,7 @@ tags: #workshop #aks #github #terraform
 - <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Terraform/Lab6_Azure_Kubernetes_Service'>Lab 6 : Déploiement Azure Kubernetes Service </a>
 
 ### Après midi
-- Rappels sur les deploiements Kubernetes : (YAML, Helm) et pipelines
+- Rappels sur les déploiements Kubernetes : (YAML, Helm) et pipelines
 - Focus/explication sur les Pipelines de Build 
 - <a href='https://github.com/FrenchBarbusCorp/Workshop-Terraform-AKS-2days/tree/main/Pipelines/Lab7_Pipeline_de_Build'>Lab 7 : Pipeline de build (CI) d'une application conteneurisée </a>
 - Focus/explication Pipeline de release
