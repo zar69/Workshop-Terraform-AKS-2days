@@ -94,9 +94,12 @@ variable "defaultpool-nodecount" {
 
 variable "defaultpool-vmsize" {
   description = "Size of VM"
-  # check if the choosen size is available in Azure region you selected : az vm list-usage --location NAMEOFAZUREREGION -o table
+  #check if VM Familly is available in your region :
+  # az vm list-usage --location NAMEOFAZUREREGION -o table
+  # check if the choosen size is available in Azure region you selected : 
+  # az vm list-sizes -l westus2 -o table
   type    = string
-  default = "Standard_D2s_v3"
+  default = "Standard_D2s_v5"
 }
 
 variable "defaultpool-ostype" {
