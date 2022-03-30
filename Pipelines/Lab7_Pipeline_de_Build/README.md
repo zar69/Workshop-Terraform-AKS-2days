@@ -19,3 +19,5 @@ L'authentification à l'Azure Container Registry se fait avec un Service Princip
 cf. https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal#use-with-docker-login :
 
 Le fichier du workflow de ce lab est .github/workflows/Lab7_Pipeline_CI_App.yml
+
+Si vous voulez activer des logs supplémentaires pour débugguer les worksflows GitHub, activer les options présentées ici : https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging 
