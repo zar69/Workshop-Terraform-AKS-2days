@@ -8,6 +8,7 @@ Ce pipeline utilise **Kubescore** (https://kube-score.com/) pour évaluer le res
 Ce pipeline génère une issue Github en cas d'erreur dans le pipeline
 
 ## Déroulé
+Aller dans les settings du repository et activer les "issues"
 
 Aller dans le répertoire .github et éditer le fichier ISSUE_TEMPLATE.md
 
