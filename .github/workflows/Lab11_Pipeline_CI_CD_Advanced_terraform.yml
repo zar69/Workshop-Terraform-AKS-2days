@@ -21,7 +21,7 @@ jobs:
 
       - name: Terraform Init
         run: |
-          cd ./Terraform         
+          cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced         
           terraform init -backend-config="sas_token=${{ secrets.BACKENDSTORAGESASTOKEN }}"
 
       - name: Run terraform fmt check
