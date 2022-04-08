@@ -26,6 +26,6 @@ variable "AzureTenandID" {
 }
 
 variable "Password" {
-  type = string
+  type    = string
   default = "SuperMotdePasse"
 }
