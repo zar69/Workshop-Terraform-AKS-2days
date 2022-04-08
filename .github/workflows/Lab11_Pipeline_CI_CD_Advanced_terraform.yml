@@ -74,7 +74,7 @@ jobs:
         run: |
           cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
           pwd
-          lisa -lisa
+          ls -lisa
           checkov -d . 
 
 
