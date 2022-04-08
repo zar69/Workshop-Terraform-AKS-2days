@@ -57,7 +57,7 @@ jobs:
              -var 'AzureClientSecret=${{ secrets.CLIENTSECRET }}' \
              -var 'AzureClientID=${{ secrets.CLIENTID }}' \
              -var 'AzureTenandID=${{ secrets.TENANTID }}' \
-             -lock=false -out=monplan.tfplan
+             -lock=false -out=tf.plan
 
       - name: Installation Checkov
         run: | 
@@ -71,8 +71,8 @@ jobs:
           
       - name: Execution de checkov sur le tfplan généré
         run: |
-          terraform show -json monplan.tfplan | jq '.' > monplan.json 
-          checkov -f monplan.json
+          terraform show -json tf.plan | jq '.'> tf.json 
+          checkov -f tf.json
 
 
       - name: Upload Artifact 
