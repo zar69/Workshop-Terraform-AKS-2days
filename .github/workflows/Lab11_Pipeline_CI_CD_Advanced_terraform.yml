@@ -58,7 +58,23 @@ jobs:
              -var 'AzureClientID=${{ secrets.CLIENTID }}' \
              -var 'AzureTenandID=${{ secrets.TENANTID }}' \
              -lock=false -out=monplan.tfplan
-             
+
+      - name: Installation Checkov
+        run: | 
+          cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced  
+          sudo apt update
+          sudo apt install software-properties-common
+          sudo add-apt-repository ppa:deadsnakes/ppa
+          sudo apt install python3.7
+          sudo apt install python3-pip
+          sudo python3.7 -m pip install -U checkov
+          
+      - name: Execution de checkov sur le tfplan généré
+        run: |
+          terraform show -json monplan.tfplan  > monplan.json 
+          checkov -f monplan.json
+
+
       - name: Upload Artifact 
         uses: actions/upload-artifact@v3
         with:
