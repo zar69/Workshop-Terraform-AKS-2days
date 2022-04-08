@@ -3,6 +3,7 @@ variable "azureRegion" {
   default     = "westeurope"
   description = "value"
 }
+
 variable "resourceGroupName" {
   type    = string
   default = "RG-DemoGitHub00"
