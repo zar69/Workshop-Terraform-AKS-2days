@@ -9,7 +9,7 @@ on:
 jobs:
 
   Terraform-Lint-Plan:
-    runs: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checks-out du repository
         uses: actions/checkout@v2
