@@ -1,8 +1,4 @@
-#  Resource Group Name
-variable "resourceGroupName" {
-  type    = string
-  default = "RG-VM-Linux"
-}
+
 
 variable "vnetName" {
     type = string
