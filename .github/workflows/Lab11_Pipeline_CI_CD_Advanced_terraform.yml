@@ -75,7 +75,7 @@ jobs:
           cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
           pwd
           ls -lisa
-          checkov -d . 
+          checkov -d . --framework terraform
 
 
       - name: Upload Artifact 
