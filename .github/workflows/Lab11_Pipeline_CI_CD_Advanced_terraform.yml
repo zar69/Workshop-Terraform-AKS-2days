@@ -1,0 +1,47 @@
+name: 6 - (Lab11) Workflow CI/CD Advanced Terraform
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  Terraform-Lint-Plan:
+    runs: ubuntu-latest
+    steps:
+      - name: Checks-out du repository
+        uses: actions/checkout@v2
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.1.7
+
+      - name: Terraform Init
+        run: |
+          cd ./Terraform         
+          terraform init -backend-config="sas_token=${{ secrets.BACKENDSTORAGESASTOKEN }}"
+
+      - name: Run terraform fmt check
+        run: |
+          terraform fmt -check -diff -recursive ./Terraform
+        id: var_fmt_check
+      
+      - name: Creation d'un Timestamp
+        if: ${{ failure() }}
+        run: | 
+          echo "::set-output name=today::$(date "+%Y/%m/%d-%H-%M-%S")"
+        id: var_timestamp
+      
+      - name : Create Issue fmt
+        if: ${{ failure() }}
+        uses: actions-ecosystem/action-create-issue@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          title: Error Terraform fmt ${{ steps.var_timestamp.outputs.today }}
+          body: |
+            ## Error Terraform fmt
+            Erreur : ${{ steps.var_fmt_check.outputs.stdout }}
+          assignees: |
+            Pierre-Chesne
+          labels: |
+            Error Terraform    
