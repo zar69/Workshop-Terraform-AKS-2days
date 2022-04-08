@@ -73,8 +73,7 @@ jobs:
         # terraform show -json tf.plan | jq '.'> tf.json
         #  checkov -f tf.json
         run: |
-          cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
-          checkov -d .
+          checkov -d ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
 
 
       - name: Upload Artifact 
