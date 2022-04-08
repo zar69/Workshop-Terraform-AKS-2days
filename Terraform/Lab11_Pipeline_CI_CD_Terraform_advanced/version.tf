@@ -4,7 +4,7 @@ terraform {
     resource_group_name  = "RG-AKSCluster"
     storage_account_name = "backendterrapierrc"
     container_name       = "tfstate"
-    key                  = "pipeline-gh.terraform.tfstate"
+    key                  = "lab11.terraform.tfstate"
   }
 
   required_providers {
