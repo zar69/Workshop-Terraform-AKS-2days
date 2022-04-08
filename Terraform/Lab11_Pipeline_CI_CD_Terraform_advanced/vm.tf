@@ -1,35 +1,34 @@
 
 
 variable "vnetName" {
-    type    = string
-    default = "Vnet-VM"  
+  type    = string
+  default = "Vnet-VM"  
 }
 
 variable "subnetName" {
-    type    = string
-    default = "Subnet-VM"  
+  type    = string
+  default = "Subnet-VM"  
 }
 
 variable "nicName" {
-    type    = string
-    default = "Nic-1"
-  
+  type    = string
+  default = "Nic-1"
 }
 
 variable "vmName" {
-    type    = string
-    default = "VM-Linux"  
+  type    = string
+  default = "VM-Linux"  
 }
 
 # az vm list-skus -l westus
 variable "vmSize" {
-    type    = string
-    default = "Standard_B2ms"  
+  type    = string
+  default = "Standard_B2ms"  
 }
 
 variable "vmUser" {
-    type    = string
-    default = "stan"  
+  type    = string
+  default = "stan"  
 }
 
 resource "azurerm_resource_group" "terra_rg" {
