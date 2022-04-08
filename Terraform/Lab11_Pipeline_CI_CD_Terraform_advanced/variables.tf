@@ -35,6 +35,11 @@ variable "vnetName" {
   default = "Vnet-VM"  
 }
 
+variable "vmUser" {
+  type    = string
+  default = "stan"  
+}
+
 variable "subnetName" {
   type    = string
   default = "Subnet-VM"  
@@ -54,9 +59,4 @@ variable "vmName" {
 variable "vmSize" {
   type    = string
   default = "Standard_B2ms"  
-}
-
-variable "vmUser" {
-  type    = string
-  default = "stan"  
 }
