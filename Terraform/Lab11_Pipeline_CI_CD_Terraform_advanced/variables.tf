@@ -31,12 +31,12 @@ variable "Password" {
 }
 
 variable "vnetName" {
-  type    = string
+  type    = "string"
   default = "Vnet-VM"  
 }
 
 variable "vmUser" {
-  type    = string
+  type    = "string"
   default = "stan"  
 }
 
