@@ -71,7 +71,7 @@ jobs:
           
       - name: Execution de checkov sur le tfplan généré
         run: |
-          terraform show -json monplan.tfplan  > monplan.json 
+          terraform show -json monplan.tfplan | jq '.' > monplan.json 
           checkov -f monplan.json
 
 
