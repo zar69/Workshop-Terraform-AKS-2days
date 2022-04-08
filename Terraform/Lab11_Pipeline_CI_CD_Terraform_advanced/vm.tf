@@ -1,5 +1,3 @@
-
-
 variable "vnetName" {
   type    = string
   default = "Vnet-VM"  
