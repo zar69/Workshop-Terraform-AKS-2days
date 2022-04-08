@@ -47,4 +47,20 @@ jobs:
           assignees: |
             Pierre-Chesne
           labels: |
-            Error Terraform    
+            Error Terraform
+
+      - name: Terraform Plan
+        run: |
+          cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
+          terraform plan \
+             -var 'AzureSubscriptionID=${{ secrets.SUBSCRIPTIONID }}' \
+             -var 'AzureClientSecret=${{ secrets.CLIENTSECRET }}' \
+             -var 'AzureClientID=${{ secrets.CLIENTID }}' \
+             -var 'AzureTenandID=${{ secrets.TENANTID }}' \
+             -lock=false -out=monplan.tfplan
+             
+      - name: Upload Artifact 
+        uses: actions/upload-artifact@v3
+        with:
+          name: ArtifactTerraform
+          path: ./Terraform//Lab11_Pipeline_CI_CD_Terraform_advanced/monplan.tfplan    
