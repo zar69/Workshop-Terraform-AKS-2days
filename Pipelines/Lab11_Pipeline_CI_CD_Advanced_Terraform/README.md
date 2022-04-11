@@ -46,6 +46,18 @@ https://www.terraform.io/cli/commands/validate
 
 ### Checkov 
 
+
+Ajouter l'option --soft-fail à la commande checkov pour ne pas bloquer le pipeline
+
+Exécuter le pipeline et vérifier les résultats de l'analyse de checkov
+
+``` bash
+Check: CKV_AZURE_50: "Ensure Virtual Machine Extensions are not Installed"
+	FAILED for resource: azurerm_linux_virtual_machine.terra_vm
+	File: /vm.tf:32-60
+	Guide: https://docs.bridgecrew.io/docs/bc_azr_general_14
+```
+
 Pour supprimer un test de validation, utiliser l'option --skip-check avec les tests à ne pas faire
 
 ``` bash
