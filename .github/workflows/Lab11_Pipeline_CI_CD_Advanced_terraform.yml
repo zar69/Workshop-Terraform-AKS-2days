@@ -24,30 +24,30 @@ jobs:
           cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced         
           terraform init -backend-config="sas_token=${{ secrets.BACKENDSTORAGESASTOKEN }}"
 
-      - name: Run terraform fmt check
-        run: |
-          terraform fmt -check -diff -recursive ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
-        id: var_fmt_check
+#       - name: Run terraform fmt check
+#         run: |
+#           terraform fmt -check -diff -recursive ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
+#         id: var_fmt_check
       
-      - name: Creation d'un Timestamp
-        if: ${{ failure() }}
-        run: | 
-          echo "::set-output name=today::$(date "+%Y/%m/%d-%H-%M-%S")"
-        id: var_timestamp
+#       - name: Creation d'un Timestamp
+#         if: ${{ failure() }}
+#         run: | 
+#           echo "::set-output name=today::$(date "+%Y/%m/%d-%H-%M-%S")"
+#         id: var_timestamp
       
-      - name : Create Issue fmt
-        if: ${{ failure() }}
-        uses: actions-ecosystem/action-create-issue@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          title: Error Terraform fmt ${{ steps.var_timestamp.outputs.today }}
-          body: |
-            ## Error Terraform fmt
-            Erreur : ${{ steps.var_fmt_check.outputs.stdout }}
-          assignees: |
-            Pierre-Chesne
-          labels: |
-            Error Terraform
+#       - name : Create Issue fmt
+#         if: ${{ failure() }}
+#         uses: actions-ecosystem/action-create-issue@v1
+#         with:
+#           github_token: ${{ secrets.github_token }}
+#           title: Error Terraform fmt ${{ steps.var_timestamp.outputs.today }}
+#           body: |
+#             ## Error Terraform fmt
+#             Erreur : ${{ steps.var_fmt_check.outputs.stdout }}
+#           assignees: |
+#             Pierre-Chesne
+#           labels: |
+#             Error Terraform
 
       - name: Terraform Plan
         run: |
