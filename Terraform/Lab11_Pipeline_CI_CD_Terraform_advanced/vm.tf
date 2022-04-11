@@ -43,7 +43,7 @@ resource "azurerm_linux_virtual_machine" "terra_vm" {
 
   admin_ssh_key {
     username   = var.vmUser
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEub4cRE0FsK9zW12CR9GBzl4BgBYFNqbh7uaHq0WlDbdj5RjSw+xdjDnzmz9gAL2Lyop+mnD1ivWRUKGyv+q17r31txN/9FaNCHzi0/NGa3N7PwLIswS0yk6bDgvCp/wTAOi9wMD+OaSIPHiXJpQhhmx2Tlw82vQqW1x6FQDwCIxBH5k1/Bs4hkNejSDIaN1bbKWGgX7o/YMSqO3jPP3hjEYOmmXj6qPTRreBZmxFA+S+/zCbR8x/hiwf/qJDqZlzd1h76RkYPQwvTBE1mdXnzcxp6A7dD7X3FQKLol5O+LzlbHHQdrRF3eqOnOFPFh9kIpbR3Qc1FQqUJ3MhaAMb stan@dockerstan1"
   }
 
   os_disk {
