@@ -6,7 +6,7 @@ variable "azureRegion" {
 
 variable "resourceGroupName" {
   type    = string
-  default = "RG-DemoGitHub00-stan"
+  default = "RG-DemoLab11"
 }
 
 variable "AzureSubscriptionID" {
