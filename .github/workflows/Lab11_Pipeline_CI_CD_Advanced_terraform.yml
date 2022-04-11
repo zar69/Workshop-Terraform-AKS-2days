@@ -75,7 +75,7 @@ jobs:
           cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
           pwd
           ls -lisa
-          checkov -d . --framework terraform --skip-check CKV_AZURE_50 --soft-fail
+          checkov -d . --framework terraform --soft-fail
 
 
       - name: Upload Artifact 

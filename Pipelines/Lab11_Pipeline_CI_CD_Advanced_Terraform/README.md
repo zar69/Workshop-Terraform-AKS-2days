@@ -42,4 +42,12 @@ As with all of the `terraform fmt` formatting decisions, this is a subjective an
 ### terraform validate
 https://www.terraform.io/cli/commands/validate
 
+
+
 ### Checkov 
+
+Pour supprimer un test de validation, utiliser l'option --skip-check avec les tests à ne pas faire
+
+``` bash
+checkov -d . --framework terraform --skip-check CKV_AZURE_50 --soft-fail
+```
