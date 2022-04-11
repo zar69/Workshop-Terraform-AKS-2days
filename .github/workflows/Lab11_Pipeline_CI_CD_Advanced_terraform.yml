@@ -24,10 +24,10 @@ jobs:
           cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced         
           terraform init -backend-config="sas_token=${{ secrets.BACKENDSTORAGESASTOKEN }}"
 
-#       - name: Run terraform fmt check
-#         run: |
-#           terraform fmt -check -diff -recursive ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
-#         id: var_fmt_check
+      - name: Run terraform fmt check
+        run: |
+          terraform fmt -check -diff ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
+        id: var_fmt_check
       
 #       - name: Creation d'un Timestamp
 #         if: ${{ failure() }}

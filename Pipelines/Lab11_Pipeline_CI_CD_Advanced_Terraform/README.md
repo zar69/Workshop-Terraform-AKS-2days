@@ -46,6 +46,8 @@ https://www.terraform.io/cli/commands/validate
 
 ### Checkov 
 
+Voir les tests effectués par Checkov sur les ressources Azure modélisées en Terraform :
+https://www.checkov.io/5.Policy%20Index/terraform.html#:~:text=377-,CKV_AZURE_1,-resource
 
 Ajouter l'option --soft-fail à la commande checkov pour ne pas bloquer le pipeline
 

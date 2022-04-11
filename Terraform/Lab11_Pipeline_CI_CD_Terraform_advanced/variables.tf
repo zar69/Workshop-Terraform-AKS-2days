@@ -32,17 +32,17 @@ variable "Password" {
 
 variable "vnetName" {
   type    = string
-  default = "Vnet-VM"  
+  default = "Vnet-VM"
 }
 
-variable "vmUser" { 
+variable "vmUser" {
   type    = string
-  default = "stan"  
+  default = "stan"
 }
 
 variable "subnetName" {
   type    = string
-  default = "Subnet-VM"  
+  default = "Subnet-VM"
 }
 
 variable "nicName" {
@@ -52,11 +52,11 @@ variable "nicName" {
 
 variable "vmName" {
   type    = string
-  default = "VM-Linux"  
+  default = "VM-Linux"
 }
 
 # az vm list-skus -l westus
 variable "vmSize" {
   type    = string
-  default = "Standard_B2ms"  
+  default = "Standard_B2ms"
 }
