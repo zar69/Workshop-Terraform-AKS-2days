@@ -37,7 +37,7 @@ variable "vnetName" {
 
 variable "vmUser" { 
   type    = string
-  default = "stanislas"  
+  default = "stan"  
 }
 
 variable "subnetName" {
