@@ -1,0 +1,51 @@
+name: 6 - (Lab11) Workflow CI/CD Advanced Terraform
+
+on:
+  push:
+    branches:
+      - Dev-Stan
+  workflow_dispatch:
+
+jobs:
+
+  Terraform-Lint-Plan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checks-out du repository
+        uses: actions/checkout@v2
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.1.7
+
+      - name: Terraform Init
+        run: |
+          cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced         
+          terraform init -backend-config="sas_token=${{ secrets.BACKENDSTORAGESASTOKEN }}"
+
+      - name: Run terraform fmt check
+        run: |
+          terraform fmt -check -diff ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
+        id: var_fmt_check
+     
+
+      - name: Terraform Plan
+        run: |
+          cd ./Terraform/Lab11_Pipeline_CI_CD_Terraform_advanced
+          terraform plan \
+             -var 'AzureSubscriptionID=${{ secrets.SUBSCRIPTIONID }}' \
+             -var 'AzureClientSecret=${{ secrets.CLIENTSECRET }}' \
+             -var 'AzureClientID=${{ secrets.CLIENTID }}' \
+             -var 'AzureTenandID=${{ secrets.TENANTID }}' \
+             -lock=false -out=tf.plan
+             
+       -name: TFSec
+ 
+
+
+      - name: Upload Artifact 
+        uses: actions/upload-artifact@v3
+        with:
+          name: ArtifactTerraform
+          path: ./Terraform//Lab11_Pipeline_CI_CD_Terraform_advanced/tf.plan
