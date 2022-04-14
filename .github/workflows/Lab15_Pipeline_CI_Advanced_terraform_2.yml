@@ -1,4 +1,4 @@
-name: 6 - (Lab11) Workflow CI/CD Advanced Terraform
+name: 8 - (Lab15) Workflow CI/CD Advanced Terraform
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
        
       # https://github.com/marketplace/actions/tfsec-action  
       - name: tfsec
-        uses: aquasecurity/tfsec-action@v1.0.0
+        uses: aquasecurity/tfsec-action@v1.0.2
         with: 
           - soft_fail: true
 
