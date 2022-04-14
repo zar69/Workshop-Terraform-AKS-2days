@@ -23,7 +23,7 @@ jobs:
       - name: tfsec
         uses: aquasecurity/tfsec-action@v1.0.2
         with:
-          version: v1.1.2
+          version: v1.18.0
           soft_fail: true 
       
       # https://github.com/marketplace/actions/run-tfsec-pr-commenter
@@ -31,5 +31,4 @@ jobs:
         uses: aquasecurity/tfsec-pr-commenter-action@v1.2.0
         with:
           github_token: ${{ github.token }}
-          tfsec_version: v1.1.2
-          
+          tfsec_formats: sarif
