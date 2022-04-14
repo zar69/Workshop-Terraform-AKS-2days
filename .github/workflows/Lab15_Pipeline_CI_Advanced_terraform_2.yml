@@ -43,6 +43,8 @@ jobs:
       # https://github.com/marketplace/actions/tfsec-action  
       - name: tfsec
         uses: aquasecurity/tfsec-action@v1.0.2
+        with:
+          version: v1.1.2
 
       - name: Upload Artifact 
         uses: actions/upload-artifact@v3
