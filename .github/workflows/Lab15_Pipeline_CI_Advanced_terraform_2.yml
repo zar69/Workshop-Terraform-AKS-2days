@@ -1,4 +1,4 @@
-name: 8 - (Lab15) Workflow CI/CD Advanced Terraform (avec TFSec)
+name: 8 - (Lab15) Workflow CI/CD Advanced Terraform (avec TFSec + github adv security)
 
 on:
   push:
