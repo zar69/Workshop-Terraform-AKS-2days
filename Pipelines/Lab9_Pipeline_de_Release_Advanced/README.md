@@ -10,11 +10,9 @@ Ce pipeline génère une issue Github en cas d'erreur dans le pipeline
 ## Déroulé
 Aller dans les settings du repository et activer les "issues"
 
-Aller dans le répertoire .github et éditer le fichier ISSUE_TEMPLATE.md
-
-Modifier la ligne 3 (assignees) avec votre compte github
-
 Aller dans le répertoire .github/workflows et visualiser le fichier Lab9_Pipeline_CD_App_Advanced.yml
+
+Modifier la ligne 43 (assignees) avec votre compte github
 
 A partir de la ligne 33, une step permet d'exécuter des tests statiques sur les manifests YAML Kubernetes en utilisant Kubescore
 
