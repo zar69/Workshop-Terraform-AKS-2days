@@ -36,10 +36,20 @@ jobs:
 
       - name: Create issue
         if: ${{ failure() }} # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-        uses: JasonEtco/create-an-issue@v2 # https://github.com/JasonEtco/create-an-issue
+        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        with:
+          assignees: "peterochesne"
+          labels: "Kube-score"
+          title: "Erreur Kube-Score"
+          body: |
+            ### Kube-Score checks
+              - [ ] Info
+              - [ ] Erreurs
+              - [ ] Erreurs critiques
+          pinned: false
+          close-previous: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # https://docs.github.com/en/actions/security-guides/automatic-token-authentication
-
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
 
