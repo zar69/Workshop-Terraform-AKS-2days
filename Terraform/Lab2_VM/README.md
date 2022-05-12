@@ -8,7 +8,7 @@ Editer les 4 fichiers terraform (.tf) les uns après les autres en suivant la nu
 
 Utiliser les liens présents dans les fichiers pour aller dans la documentation de Terraform
 
-Une fois les fichiers modifés, placez vous dans votre bash dans le répertoire Terraform/Storage et exécuter la commande **terraform init** 
+Une fois les fichiers modifés, placez vous dans votre bash dans le répertoire Terraform/Lab2_VM et exécuter la commande **terraform init** 
 
 Cette commande va télécharger le provider azurerm (dans cet exercice)
 
