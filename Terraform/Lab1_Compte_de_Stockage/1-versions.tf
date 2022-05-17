@@ -17,8 +17,7 @@ terraform {
       # source is not required for the hashicorp/* namespace as a measure of
       # backward compatibility for commonly-used providers, but recommended for
       # explicitness.
-      # Configure the Azure Provider
-      # more info : https://github.com/terraform-providers/terraform-provider-azurerm
+      # more info about the Azure Provider: https://github.com/terraform-providers/terraform-provider-azurerm
       # Check Changelog : https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/CHANGELOG.md
       source  = "hashicorp/azurerm"
       version = "= 2.98.0"
