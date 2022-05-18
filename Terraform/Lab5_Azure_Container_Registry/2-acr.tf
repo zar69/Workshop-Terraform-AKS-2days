@@ -1,9 +1,3 @@
-## INSERER ICI LE CODE POUR FAIRE UNE Azure Container Registry
-
-# Indices : https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry
-#                prendre la SKU Standard
-
-
 resource "azurerm_container_registry" "Terra-acr" {
   name                = var.acrName
   resource_group_name = var.resourceGroupName
