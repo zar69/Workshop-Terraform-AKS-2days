@@ -46,5 +46,12 @@ jobs:
     
       - name: test
         run: |
+          cd ./Terraform/Lab4_Pipeline_CI_CD_Terraform
           ls -lisa
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: TerraFrom
+          path: /Terraform/Lab4_Pipeline_CI_CD_Terraform/monplan.tfplan
 
