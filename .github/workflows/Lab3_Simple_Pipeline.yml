@@ -18,4 +18,4 @@ jobs:
 
       - name: Liste des ressources groupes dans un abonnement
         run: |
-          az group list -o table
+          date #az group list -o table
