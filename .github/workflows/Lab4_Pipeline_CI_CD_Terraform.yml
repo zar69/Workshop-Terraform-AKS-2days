@@ -45,6 +45,6 @@ jobs:
       #    terraform apply -auto-approve -lock=false "monplan.tfplan"
     
       - name: test
-      run: |
-        ls -lisa
+        run: |
+          ls -lisa
 
