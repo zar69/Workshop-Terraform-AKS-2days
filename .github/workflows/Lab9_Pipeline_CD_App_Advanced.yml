@@ -33,7 +33,7 @@ jobs:
             --ignore-test container-ephemeral-storage-request-equals-limit \
             --ignore-test container-ephemeral-storage-request-and-limit \
             2> errors.txt 
-          echo ::set-output name=errors::`cat errors.txt`
+          echo ::set-output name=errors::'cat errors.txt'
 
 #            --ignore-test container-resources \
 #            --ignore-test pod-probes \
