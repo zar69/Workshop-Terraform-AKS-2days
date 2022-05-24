@@ -31,16 +31,16 @@ jobs:
             --ignore-test container-security-context-user-group-id \
             --ignore-test container-security-context-readonlyrootfilesystem \
             --ignore-test container-ephemeral-storage-request-equals-limit \
-            --ignore-test container-ephemeral-storage-request-and-limit
+            --ignore-test container-ephemeral-storage-request-and-limit \
+            2> errors.txt
 
 #            --ignore-test container-resources \
 #            --ignore-test pod-probes \
-
-      - name: use error detail on failure
-        if: ${{ failure() }}
+            
+      - name: Error
         run: |
-          echo ${{ steps.maybe_fails.outputs.errors }}
-
+          cat errors.txt
+        
       - name: Create issue
         if: ${{ failure() }} # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
