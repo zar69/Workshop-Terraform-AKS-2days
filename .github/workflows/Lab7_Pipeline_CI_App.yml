@@ -1,7 +1,7 @@
 name: 3 - Workflow CI Application
 
 on:
-  workflow_dispatch:
+  push #workflow_dispatch:
 
 env: # variables 
   REGISTRY_NAME: "acrcesar2022"
