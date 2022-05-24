@@ -31,8 +31,7 @@ jobs:
             --ignore-test container-security-context-user-group-id \
             --ignore-test container-security-context-readonlyrootfilesystem \
             --ignore-test container-ephemeral-storage-request-equals-limit \
-            --ignore-test container-ephemeral-storage-request-and-limit \
-            2> errors.txt
+            --ignore-test container-ephemeral-storage-request-and-limit 
           echo ::set-output name=errors::`cat errors.txt`
 
 #            --ignore-test container-resources \
