@@ -8,7 +8,7 @@ describe("test hello-world", () => {
       .expect("Content-Type", /json/)
       .expect(200)
       .then((response) => {
-        expect(response.body.message).toBe("hello API Bleue");
+        expect(response.body.message).toBe("hello API Bleue!");
         done();
       })
       .catch((e) => done(e));
