@@ -38,6 +38,7 @@ jobs:
 #            --ignore-test pod-probes \
             
       - name: Error
+        if: ${{ failure() }}
         run: |
           cat errors.txt
         
