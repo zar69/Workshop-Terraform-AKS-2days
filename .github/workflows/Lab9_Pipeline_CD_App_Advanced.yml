@@ -33,6 +33,7 @@ jobs:
             --ignore-test container-ephemeral-storage-request-equals-limit \
             --ignore-test container-ephemeral-storage-request-and-limit \
             2> errors.txt
+          echo ::set-output name=errors::`cat errors.txt`
 
 #            --ignore-test container-resources \
 #            --ignore-test pod-probes \
@@ -40,7 +41,7 @@ jobs:
       - name: Error
         if: ${{ failure() }}
         run: |
-          cat errors.txt
+          echo ${{ steps.Test Kube-score.outputs.errors }}
         
       - name: Create issue
         if: ${{ failure() }} # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
